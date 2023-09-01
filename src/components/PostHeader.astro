@@ -25,7 +25,7 @@ const {frontmatter} = Astro.props
     src={frontmatter.image.src} 
     alt={frontmatter.image.alt} /> -->
     <Image 
-    src={frontmatter.image.src} 
+    src={import(frontmatter.image.src)} 
     alt={frontmatter.image.alt}
     decoding="async"
     loading="lazy"

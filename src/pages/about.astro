@@ -2,15 +2,23 @@
 // Component imports
 import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
-import { Image, getImage } from "astro:assets"
+import { Image } from "astro:assets"
+const headshotPath = "/src/assets/headshot.avif"
 ---
 
-<MainLayout title="Page Not Found" description="About">
+<MainLayout title="Sobre mi" description="Sobre ">
     <section class="container about" aria-label="About Me">
-        <Image src="/src/assets/headshot.jpg" 
-        alt="My Headshot" 
-        width="20" 
-        height="30" />
+        <Image 
+    src={import(headshotPath)} 
+    alt="Mierdon"
+    decoding="async"
+    loading="lazy"
+    width="1200"
+    height="600"
+    format="avif"
+    quality="low"
+    
+    quality = {20} />
         <div class="content">
             <div class="h1">My Blog</div>
             <p>

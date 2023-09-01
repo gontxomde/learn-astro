@@ -1,0 +1,25 @@
+---
+// Component imports
+import MainLayout from "./MainLayout.astro";
+import { Image, getImage } from "astro:assets"
+
+import PostHeader from "../components/PostHeader.astro"
+
+// Utils import
+import {slugify, formatDate} from "../js/utils";
+
+const {frontmatter} = Astro.props
+
+---
+
+<MainLayout title={frontmatter.title} description={frontmatter.description}>
+    <PostHeader frontmatter= { frontmatter}/>
+    <div class="post-content">
+        <div class="content">
+            <slot />
+        </div>
+        <div class="sidebar">
+
+        </div>
+    </div>
+</MainLayout>

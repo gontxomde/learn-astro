@@ -3,13 +3,12 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets"
-const headshotPath = "https://izaguirre.dev/images/headshot.avif"
 ---
 
 <MainLayout title="Sobre mi" description="Sobre ">
     <section class="container about" aria-label="About Me">
         <Image 
-    src={import(headshotPath)} 
+    src={import("/images/headshot.avif")} 
     alt="Mierdon"
     decoding="async"
     loading="lazy"

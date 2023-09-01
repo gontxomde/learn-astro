@@ -4,7 +4,7 @@ title: JavaScript SchmavaScript
 date: 2022-12-05
 author: Gonzalo Izaguirre
 image: {
-  src: "/src/assets/post-5.jpg",
+  src: "/images/post-5.jpg",
   alt: "A picture of a coder",
 }
 description: This is a blog post about the JavaScript programming language. Like it, love it, hate it, it's here to stay.

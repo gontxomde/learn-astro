@@ -4,7 +4,7 @@ title: Why is this CSS so weird?
 date: 2022-12-09
 author: Gonzalo Izaguirre
 image: {
-  src: "/src/assets/post-4.jpg",
+  src: "/images/post-4.jpg",
   alt: "A picture of a coder",
 }
 description: The global css file for this site is a bit different than I’d write things normally, but I’m trying to keep you from having to write a bunch of random classes.

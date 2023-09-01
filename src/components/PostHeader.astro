@@ -1,38 +1,43 @@
 ---
 // Component imports
 import MainLayout from "../layouts/MainLayout.astro";
-import { Image, getImage } from "astro:assets"
+import { Image, getImage } from "astro:assets";
 
 // Utils import
-import {slugify, formatDate} from "../js/utils";
+import { slugify, formatDate } from "../js/utils";
 
-const {frontmatter} = Astro.props
+const { frontmatter } = Astro.props;
 
+console.log(frontmatter.image.src);
 ---
 
 <header>
     <div class="container">
         <small>
-            
-            <a href={ `/category/${slugify(frontmatter.category)}/` }
-            class="badge">{frontmatter.category}</a>
+            <a
+                href={`/category/${slugify(frontmatter.category)}/`}
+                class="badge">{frontmatter.category}</a
+            >
         </small>
-        <h1 class="h2"> { frontmatter.title } </h1>
-        <p> by <a href="/about/"> {frontmatter.author}</a> • {formatDate(frontmatter.date)}</p>
-
+        <h1 class="h2">{frontmatter.title}</h1>
+        <p>
+            by <a href="/about/"> {frontmatter.author}</a> • {
+                formatDate(frontmatter.date)
+            }
+        </p>
     </div>
     <!-- <img
     src={frontmatter.image.src} 
     alt={frontmatter.image.alt} /> -->
-    <Image 
-    src={frontmatter.image.src} 
-    alt={frontmatter.image.alt}
-    decoding="async"
-    loading="lazy"
-    width="1200"
-    height="600"
-    format="avif"
-    quality="low"
-    
-    quality = {20} />
+    <Image
+        src={frontmatter.image.src}
+        alt={frontmatter.image.alt}
+        decoding="async"
+        loading="lazy"
+        width="1200"
+        height="600"
+        format="avif"
+        quality="low"
+        quality={20}
+    />
 </header>

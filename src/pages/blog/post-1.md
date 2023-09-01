@@ -4,7 +4,7 @@ title: A Post about Important Items Of Life
 date: 2022-11-20
 author: Gonzalo Izaguirre
 image: {
-  src: "/assets/post-1.jpg",
+  src: "https://izaguirre.dev/images/post-1.jpg",
   alt: "A picture of a coder",
 }
 description: Have you ever wondered what the most important items of life are? Well, wonder no more!

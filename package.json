@@ -1,0 +1,23 @@
+{
+  "name": "Izaguirre personal website",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "browsertslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^4.0.3",
+    "astro": "^3.0.6",
+    "astro-icon": "^0.8.1",
+    "postcss": "^8.4.29",
+    "postcss-preset-env": "^9.1.2"
+  }
+}

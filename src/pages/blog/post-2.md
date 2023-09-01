@@ -4,7 +4,7 @@ title: Running out of sample post ideas
 date: 2022-11-25
 author: Gonzalo Izaguirre
 image: {
-  src: "https://izaguirre.dev/images/post-2.jpg",
+  src: "/images/post-2.jpg",
   alt: "A picture of a coder",
 }
 description: Sometimes you just run out of ideas for sample blog posts. It’s no one’s fault, it’s just the way it is.

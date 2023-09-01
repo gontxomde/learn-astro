@@ -1,0 +1,27 @@
+---
+// Component imports
+import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
+---
+
+<MainLayout title="Page Not Found" description="About">
+    <section class="container about" aria-label="About Me">
+        <img src="/images/headshot.jpg" alt="My Headshot" width="20" />
+        <div class="content">
+            <div class="h1">My Blog</div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, quidem inventore? Provident quidem delectus odit
+                repellendus, voluptatem blanditiis error iste molestiae
+                praesentium at. Inventore, sint unde. Nostrum dolor non
+                repellendus facere itaque. Non enim, eos libero asperiores
+                explicabo vitae incidunt.
+            </p>
+            <Link
+                href="mailto:g.izaguirre.de.diego@gmail.com"
+                style="primary"
+                text="Contact Me"
+            />
+        </div>
+    </section>
+</MainLayout>
